@@ -85,3 +85,32 @@ img{
 .main{
     overflow: hidden;
 }
+
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--body-color);
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: box-shadow .3s, background .4s;
+}
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav--logo,
+.nav--toggle,
+.nav--close{
+    display: flex;
+   color: var(--title-color);
+}
+
+.nav--logo{
+    align-items: center;
+    column-gap: .5rem;
+}

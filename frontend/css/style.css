@@ -19,6 +19,28 @@
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.marck-script-regular {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media screen and (min-width: 1024px) {
     :root{
         --biggest-font-size: 4rem;
@@ -55,14 +77,10 @@ img{
     height: auto;
 }
 
-.container{
-    max-width: 100%;
-    margin-inline: 1.5rem;
-}
 
 .grid{
     display: grid;
-    gap: 1.5rem;
+ 
 }
 
 .section{
@@ -87,30 +105,88 @@ img{
 }
 
 .header{
-    position: fixed;
+    padding: 0px 12%;
+    /* position: fixed;
     width: 100%;
     background-color: var(--body-color);
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    transition: box-shadow .3s, background .4s;
+    transition: box-shadow .3s, background .4s; */
 }
 .nav{
+    text-align: center;
     position: relative;
-    height: var(--header-height);
+    padding: 20px 0px; 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-
-.nav--logo,
-.nav--toggle,
-.nav--close{
+.nav--menu, ul,li,a{
     display: flex;
-   color: var(--title-color);
+    gap: 50px;
+    text-align: center;
+   font-size: 18px;  
+   color: var(--text-color);
+}
+.icon--menu, #icon i {
+    color: var(--text-color);
+    font-size: 18px;
+    justify-content: space-between;
 }
 
-.nav--logo{
-    align-items: center;
-    column-gap: .5rem;
+.nav> a{
+    font-size: 23px;
 }
+#header{
+    background-color: var(--body-color );
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 12%;
+}
+.nav, a > span{
+    /* font-size: 29px; */
+    font-weight: 500;
+}
+
+.header-content{
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.header-right{
+    padding-top: 50px;
+    h1{
+        font-size: 2.3rem;
+        padding-bottom: 30px;
+    }
+    p{
+        font-size: 1.1rem;
+        padding-bottom: 30px;
+    }
+}
+.header-right > button{
+    padding: 1.1rem;   
+    background-color: var(--first-color);
+    color: #fff;
+    gap: 100px;
+    font-family: robato;
+    border-radius: 60px;
+}
+.header-left > img{
+    width: 100%;
+}
+.imge{
+    padding: 0px 12%;
+    padding-top: 20px;
+    position: absolute;
+    width: 95%;
+    top: 2rem;
+    left: .1rem;
+    z-index: -1;
+    opacity: .1;
+}
+
+

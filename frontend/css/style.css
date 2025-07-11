@@ -139,19 +139,58 @@ nav{
 }
 
 .container-title{
- 
     padding: 20px 4%;
     position: relative;
     align-items: center;
     justify-content: center;
     text-align: center; 
-}
-.line{
-    width: 100%;
-    height: 9px;
-    background-color: red;
-    
 } 
+ 
+.brand-section h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9c6644;
+      font-size: 20px;
+      margin-bottom: 40px;
+      font-family: "Poppins", sans-serif;
+}
+
+.brand-section h2::before,
+.brand-section h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #9c6644;
+      margin: 0 10px;
+      border: 2px solid #9c6644;
+}
+.brand-section1 h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFADA;
+      font-size: 20px;
+      margin-bottom: 40px;
+      font-family: "Poppins", sans-serif;
+}
+
+.brand-section1 h2::before,
+.brand-section1 h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #FFFADA;
+      margin: 0 10px;
+      border: 2px solid #FFFADA;
+}
+
+ .line{
+    width: 100%;
+    height: 3px;
+    background-color: #FFFADA;
+    
+}  
 .container-title > p{
     text-align: center;
     align-items: center;
@@ -169,6 +208,7 @@ nav{
     gap: 70px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .card{
     max-width: 100%;
@@ -230,6 +270,7 @@ nav{
     gap: 60px;
    justify-content: center;
    align-items: center;
+   margin-bottom: 50px;
 }
 
 footer{
@@ -269,3 +310,8 @@ footer{
     font-size: 21px;
     font-family: "Poppins";
 }
+
+
+    
+
+    

@@ -129,15 +129,15 @@ nav{
     background: linear-gradient(to top, #A0583C, #C08267);
     border-radius: 20px;
     color: #fff;
+    font-weight: 500;
     font-family: 'poppins', sans-serif;
+    cursor: pointer;
 }
-
-.container{
+.main-context{
     width: 100%;
     height: auto;
-    background: #FFFADA;
+    background-color: #FFFADA;
 }
-
 .container-title{
     padding: 20px 4%;
     position: relative;
@@ -145,15 +145,18 @@ nav{
     justify-content: center;
     text-align: center; 
 } 
+.container{
+    padding-bottom: 50px;
+}
  
 .brand-section h2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #9c6644;
-      font-size: 20px;
-      margin-bottom: 40px;
-      font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9c6644;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
 }
 
 .brand-section h2::before,
@@ -191,15 +194,6 @@ nav{
     background-color: #FFFADA;
     
 }  
-.container-title > p{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -13px; 
-    color: yellow;
-    font-family: "Poppins";
-}
 
 .content{
     margin-top: 60px;
@@ -232,6 +226,10 @@ nav{
     font-size: 0.9rem;
     color: #fff;
     font-family: "Poppins";
+    transition: box-shadow 0.5s ease;
+}
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .price{
@@ -254,14 +252,11 @@ nav{
     font-size: 15px;
     box-shadow: rgba(0, 0, 0, 0.25);
     font-family: "Poppins";
+    cursor: pointer;
 }
-
 .brand-contanier{
-    width: 100%;
-    height: auto;
-    background: #FFFADA;
+    padding-bottom: 70px;
 }
-
 .brand-logo{
     width: 100%;
     padding: 0px 6%;
@@ -269,7 +264,6 @@ nav{
     gap: 60px;
    justify-content: center;
    align-items: center;
-   margin-bottom: 50px;
 }
 
 footer{
@@ -311,6 +305,6 @@ footer{
 }
 
 
-    
+     
 
     

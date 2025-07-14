@@ -9,3 +9,17 @@ if (loginToggle && loginPassword) {
         loginToggle.classList.toggle("fa-eye-slash");
     });
 }
+
+// Switch between login and register forms
+function toggleForm(formType) {
+    const loginSection = document.querySelector("section.auth:nth-of-type(1)");
+    const registerSection = document.getElementById("register-form");
+
+    if (formType === 'register') {
+        loginSection.style.display = "none";
+        registerSection.style.display = "flex";
+    } else {
+        registerSection.style.display = "none";
+        loginSection.style.display = "flex";
+    }
+}

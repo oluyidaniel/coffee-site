@@ -50,18 +50,14 @@ nav{
     align-items: center;
     gap: 1.5rem;
 }
-.nav-actions a{
-    font-size: 12px;
+.nav-actions i{
     color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    text-align: center;
-    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
     transition: .3s ease-in-out;
-    padding: 10px 20px;
-    background-color: #A0583C;
-    border-radius: 10px;
-    font-weight: 600;
+    padding: 10px;
+    background-color: #C08267;
+    border-radius: 50%;
 }
 .btn{
     text-align: center;

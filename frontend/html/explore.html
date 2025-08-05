@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <title>Explore</title>
 </head>
+
 <body>
-     <header>
+    <header>
         <nav>
             <div class="logo">
                 <a href="#">
@@ -21,65 +27,92 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <div class="nav-actions">
-                
+
             </div>
         </nav>
+        <div class="header-main">
+            <div class="header-content">
+                <h1>Power up with coffee</h1>
+                <p>Start your exciting day with a cup of brew coffee</p>
+                <input type="text" id="searchInput" placeholder="Search coffee name..." />
+
+                <!-- Category Filters -->
+                <div class="categories">
+                    <button onclick="filterByCategory('All')">All</button>
+                    <button onclick="filterByCategory('Espresso')">Espresso</button>
+                    <button onclick="filterByCategory('Spiced')">Spiced</button>
+                    <button onclick="filterByCategory('Iced')">Iced</button>
+                    <button onclick="filterByCategory('Special')">Special</button>
+                </div>
+
+            </div>
+        </div>
     </header>
 
-   <div class="main-context">
+    <div class="main-context">
         <section class="container">
             <div class="container-title">
                 <div class="brand-section">
                     <h2>Explore the Coffee World</h2>
                 </div>
             </div>
-            <div class="content">
-                <div class="card">
-                    <img src="../images/img/Coffee.svg" alt="">
-                    <h2>Cappacino</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae, integer
-                        fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
-                    <div class="price">
-                        <h1>$8.60</h1>
-                        <span>Order now</span>
-                    </div>
-                </div>
+            <h2>Top sales</h2>
 
-                <div class="card">
-                    <img src="../images/img/Mask group.svg" alt="">
-                    <h2>Mocha</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae, integer
-                        fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
-                    <div class="price">
-                        <h1>$9.20</h1>
-                        <span>Order now</span>
+            <div class="swiper-container swiper-vertical">
+                <div class="content">
+                    <div class="card">
+                        <img src="../images/img/Coffee.svg" alt="">
+                        <h2>Cappacino</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae,
+                            integer
+                            fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
+                        <div class="price">
+                            <h1>$8.60</h1>
+                            <span><i class="fa-solid fa-cart-plus"></i>Add to cart</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="../images/img/unsplash_TvXpVcgi9nw.svg" alt="">
-                    <h2>Latte</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae, integer
-                        fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
-                    <div class="price">
-                        <h1>$11.40</h1>
-                        <span>Order now</span>
+                    <div class="card">
+                        <img src="../images/img/Mask group.svg" alt="">
+                        <h2>Mocha</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae,
+                            integer
+                            fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
+                        <div class="price">
+                            <h1>$9.20</h1>
+                            <span>Order now</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="../images/img/Mask group (1).svg" alt="">
-                    <h2>Cold Java</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae, integer
-                        fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
-                    <div class="price">
-                        <h1>$6.40</h1>
-                        <span>Order now</span>
+                    <div class="card">
+                        <img src="../images/img/unsplash_TvXpVcgi9nw.svg" alt="">
+                        <h2>Latte</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae,
+                            integer
+                            fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
+                        <div class="price">
+                            <h1>$11.40</h1>
+                            <span>Order now</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../images/img/Mask group (1).svg" alt="">
+                        <h2>Cold Java</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa, fermentum id id vitae,
+                            integer
+                            fermentum tellus. In vitae id nisl quis ornare diam commodo in vel dolor.</p>
+                        <div class="price">
+                            <h1>$6.40</h1>
+                            <span>Order now</span>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="swiper-button-prev"><i class="fas fa-chevron-up"></i></div>
+                <div class="swiper-button-next"><i class="fas fa-chevron-down"></i></div> -->
             </div>
         </section>
-   </div>
+    </div>
     <footer>
         <div class="container-title">
             <div class="brand-section1">
@@ -126,5 +159,7 @@
             <p><span>Filtro</span>All Rights Reserved</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
+
 </html>

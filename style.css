@@ -1,0 +1,143 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf5;
+}
+
+nav {
+  background: #6f4e37;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart {
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #5a3e2c;
+  transform: scale(1.05);
+}
+
+#cart-sidebar {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #f7f7f7;
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+#cart-sidebar.open {
+  right: 0;
+}
+
+#cart-items {
+  margin-top: 20px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+.empty-cart p {
+  font-size: 16px;
+  animation: floatText 2s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* --- Popup Notification Styles --- */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+  width: fit-content;
+  max-width: 90%;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popup.success {
+  background-color: rgba(40, 167, 69, 0.8);
+}
+
+.popup.error {
+  background-color: rgba(220, 53, 69, 0.8);
+}
+
+#popup-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  animation: progressBar 2s linear forwards;
+  border-radius: 0 0 12px 12px;
+}
+
+@keyframes progressBar {
+  from { width: 100%; }
+  to { width: 0; }
+}
+
+@media (max-width: 500px) {
+  .popup {
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

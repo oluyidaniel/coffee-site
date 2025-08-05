@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Coffee Shop</h1>
+      <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <!-- Product Section -->
+  <section id="products">
+    <div class="product" data-id="1" data-name="Espresso" data-price="5" data-stock="24">
+      <h3>Espresso</h3>
+      <p class="stock">24 items remaining</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="2" data-name="Latte" data-price="6" data-stock="15">
+      <h3>Latte</h3>
+      <p class="stock">15 items remaining</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <aside id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="closeCart()">Close Cart</button>
+  </aside>
+
+  <!-- Popup Notification -->
+  <div id="popup-notification" class="popup hidden">
+    <span id="popup-icon">✅</span>
+    <span id="popup-text">Message</span>
+    <div id="popup-progress"></div>
+  </div>
+
+
+  
+  <script src="./sc=tyle.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Espresso",
+    "milk": "None",
+    "sugar": "None (Optional)",
+    "description": "Strong, bold, and concentrated flavor.",
+    "category": "Espresso"
+  },
+  {
+    "name": "Latte",
+    "milk": "High",
+    "sugar": "Often Sweetened",
+    "description": "Smooth, milky, with light coffee taste.",
+    "category": "Special"
+  },
+  {
+    "name": "Pumpkin Spice Latte",
+    "milk": "High",
+    "sugar": "Sweet",
+    "description": "A seasonal favorite with warm spice flavors.",
+    "category": "Spiced"
+  },
+  {
+    "name": "Iced Mocha",
+    "milk": "High",
+    "sugar": "Sweet",
+    "description": "Chilled blend of coffee, chocolate & milk.",
+    "category": "Iced"
+  }
+]

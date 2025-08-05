@@ -19,6 +19,7 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 nav{
@@ -32,6 +33,7 @@ nav{
     position: fixed;
     left: 0;
     top: 0;
+    position: relative;
 }
 
 .nav-links{
@@ -71,6 +73,39 @@ nav{
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.header-content{
+    position: reletive;
+}
+.header-main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.header-content h1{
+    font-size: 72px;
+    color: #FFFADA;
+    padding-bottom: 10px;
+    font-family: 'roboto', sans-serif;
+    /* font-weight: 600; */
+}
+.header-content p{
+    font-size: 24px;
+    color: #CCB9B1;
+    font-family: 'roboto';
+}
+.header-content button{
+    margin-top: 20px;
+    padding: 13px 40px;
+    background: linear-gradient(to top, #A0583C, #C08267);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
 }
 
 .main-context{
@@ -134,7 +169,36 @@ nav{
     background-color: #FFFADA;
     
 }  
+/* .swiper-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000;
+  background: rgba(255, 255, 255, 0.9);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  left: calc(50% - 20px);
+  cursor: pointer;
+}
 
+.swiper-button-prev {
+  top: 10px;
+}
+
+.swiper-button-next {
+  bottom: 10px;
+} */
 .content{
     margin-top: 60px;
     padding: 0px 5%;
@@ -144,6 +208,7 @@ nav{
     align-items: center;
     flex-wrap: wrap;
 }
+
 .card{
     max-width: 100%;
     width: 250px;
@@ -194,6 +259,15 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.25);
     font-family: "Poppins";
     cursor: pointer;
+    gap: 10px;
+}
+.price span:hover{
+    background-color: #9c6644;
+}
+span i{
+    gap: 10px;
+    color: #fff;
+    padding-right: 5px;
 }
 .brand-contanier{
     padding-bottom: 70px;
